@@ -1,7 +1,7 @@
 # flex-grid
 Grid system using CSS3 flexbox (inspired from bootstrap)
 
-grid.less gives a 12-column grid system like Bootstrap. Also allows to reorder elements in mobile.
+grid.less gives a 12-column grid system like Bootstrap. Also allows to reorder elements in mobile site.
 
 ### Usage
 The CSS is meant to be used along with [flex-helper](https://github.com/Munawwar/flex-helper).
@@ -16,7 +16,10 @@ col-mo-1 to col-mo-12 - Makes element a column of size 1 to 12, for all size, un
 col-ta-1 to col-ta-12 - Makes element a column of size 1 to 12, for tablet size (>=768px), unless overridden by desktop column class.
 col-de-1 to col-de-12 - Makes element a column of size 1 to 12, for desktop szte (>=992px).
 
-order-mo-1 to order-mo-12 - Order of element would be 
+order-mo-1 to order-mo-12 - Order of element would be explicitly set in mobile size.
+order-ta-1 to order-ta-12 - Order of element would be explicitly set in tablet size.
+order-de-1 to order-de-12 - Order of element would be explicitly set in desktop size.
+
 ```
 
 ### BUGS!
