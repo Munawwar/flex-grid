@@ -1,0 +1,26 @@
+/* Grid system using flexbox inspired from Bootstrap. */
+/* This is meant to be used along with https://github.com/Munawwar/flex-helper */
+
+/* Classes to reorder items in mobile  */
+.generate-columns-orders(@prefix, @grid-count: 12, @i: 1) when (@i =< @grid-count) {
+  .order-@{prefix}-@{i} {
+    order: @i;
+  }
+  .generate-columns-orders(@prefix, @grid-count, (@i + 1));
+}
+
+// For Mobile 
+.generate-columns(mo);
+.generate-columns-orders(mo);
+
+// For Tablets
+@media (min-width: 768px) {
+  .generate-columns(ta);
+  .generate-columns-orders(ta);
+}
+
+// For Desktop
+@media (min-width: 992px) {
+  .generate-columns(de);
+  .generate-columns-orders(de);
+}
