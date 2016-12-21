@@ -31,3 +31,7 @@ One notable bug in IE 10-11, is that using min-height/min-width along with flex 
 
 There are other bugs documented at [flexbox-bugs](https://github.com/philipwalton/flexbugs).
 Note: However flex-grid doesn't use all of the flexbox syntax, so some of them are not relevant.
+
+### Credits
+
+Thanks to [Umar](https://github.com/w3debugger) for reviewing and helping.
