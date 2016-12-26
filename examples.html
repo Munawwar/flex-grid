@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="example-deps/flex-helper.css">
+        <link rel="stylesheet" type="text/css" href="example-deps/flex-grid.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <style type="text/css">
+            html {
+                padding: 0;
+            }
+            html, body {
+                margin: 0;
+            }
+            body {
+                margin: 0 auto;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                max-width: 960px;
+                width: 100%;
+                padding: 0 5px 20px 5px;
+                box-sizing: border-box;
+            }
+            @media (min-width: 992px) {
+                body {
+                    padding: 0 0 20px 0;
+                }
+            }
+            h2 {
+                text-align: center;
+                font-size: 18px;
+            }
+            h5 {
+                text-align: center;
+                font-size: 12px;
+                margin: 0;
+            }
+            .window {
+                height: 200px;
+                width: 470px;
+                color: white;
+                margin: 10px auto;
+            }
+            .window-code {
+                width: 470px;
+                overflow: auto;
+            }
+            pre {
+                margin: 5px auto;
+                white-space: pre-wrap;
+            }
+
+            .blue {
+                background-color: #42a5f5;
+            }
+            .amber {
+                background-color: #ffc400;
+            }
+            .teal {
+                background-color: #26a69a;
+            }
+            .red {
+                background-color: #ef5350;
+            }
+            .cyan {
+                background-color: #4dd0e1;
+            }
+            .orange {
+                background-color: #ffa726;
+            }
+            .pink {
+                background-color: #f06292;
+            }
+            .gray {
+                background-color: #e0e0e0;
+            }
+        </style>
+        <script src="example-deps/util.js"></script>
+    </head>
+    <body>
+        <h3>Dependency</h3>
+        <div>grid.less depends on flex-helper-2012.css from <a href="https://github.com/Munawwar/flex-helper">https://github.com/Munawwar/flex-helper</a></div>
+
+        <h3>Class Names</h3>
+        <div>
+            Device type prefixes are the first two letters of device type. i.e 'de' for desktops, 'mo' for mobiles and 'ta' for tablets.<br>
+            [This naming convention was adopted to avoid collision with bootstrap.]<br>
+            <br>
+            Just like bootstrap the CSS priority is "mobile first". i.e. if you apply col-mo-12, on an element, then it applies to all device
+            widths unless another higher-width CSS is applied (like col-de-*).
+        </div>
+        <h3>Example usage</h3>
+        <div>
+            <h2>12 column width on mobile and 6 column width on desktop</h2>
+            <div class="hbox" id="eg-1">
+                <div class="blue col-mo-12 col-de-6" style="height: 30px;">Col 1</div>
+                <div class="amber col-mo-12 col-de-6" style="height: 50px;">Col 2</div>
+            </div>
+            <div>
+                <script type="text/html" data-id="eg-1"></script>
+            </div>
+
+            <h2>Adding vertical align to previous example</h2>
+            <div style="text-align:center; padding-bottom: 5px;">Just add 'cross-center' to parent div.</div>
+            <div class="hbox cross-center" id="eg-2">
+                <div class="blue col-mo-12 col-de-6" style="height: 30px;">Col 1</div>
+                <div class="amber col-mo-12 col-de-6" style="height: 50px;">Col 2</div>
+            </div>
+            <div>
+                <script type="text/html" data-id="eg-2"></script>
+            </div>
+            <div style="padding-bottom: 15px;">This feature is not from flex-grid but rather from <a href="https://github.com/Munawwar/flex-helper">flex-helper</a>.
+            Read more on other helper classes at that project.</div>
+
+            <h2>Reordering in mobile</h2>
+            <div style="text-align:center; padding-bottom: 5px;">Use order-[device]-[number] classes.</div>
+            <div class="hbox cross-center" id="eg-3">
+                <div class="blue col-mo-12 col-de-6 order-mo-2 order-de-1" style="height: 30px;">Col 1</div>
+                <div class="amber col-mo-12 col-de-6 order-mo-1 order-de-2" style="height: 50px;">Col 2</div>
+            </div>
+            <div>
+                <script type="text/html" data-id="eg-3"></script>
+            </div>
+
+            <h2>RTL support</h2>
+            <div style="text-align:center; padding-bottom: 5px;">Use HTML element attribute dir="rtl" or CSS direction: rtl.</div>
+            <div class="hbox cross-center" id="eg-4" dir="rtl">
+                <div class="blue col-mo-12 col-de-6 order-mo-2 order-de-1" style="height: 30px;">Col 1</div>
+                <div class="amber col-mo-12 col-de-6 order-mo-1 order-de-2" style="height: 50px;">Col 2</div>
+            </div>
+            <div>
+                <script type="text/html" data-id="eg-4"></script>
+            </div>
+
+        </div>
+
+        <script>
+            Li.slice(document.querySelectorAll('script[type="text/html"]')).forEach(function (el) {
+                var pre = document.createElement('pre'),
+                    html;
+                if (el.getAttribute('data-class')) {
+                    pre.className = el.getAttribute('data-class');
+                }
+                if (el.getAttribute('data-style')) {
+                    pre.setAttribute('style', el.getAttribute('data-style'));
+                }
+                if (el.getAttribute('data-id')) {
+                    var target = document.getElementById(el.getAttribute('data-id'));
+                    target.removeAttribute('id');
+                    html = window.beautifyHTML(target.outerHTML);
+                } else {
+                    html = el.innerHTML;
+                }
+                html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                pre.innerHTML = html;
+                el.parentNode.replaceChild(pre, el);
+            });
+        </script>
+
+        <h3>IE Caveat</h3>
+        <div>
+            Read about IE gotachas at the README.md and <a href="https://github.com/Munawwar/flex-helper">https://github.com/Munawwar/flex-helper</a>
+            examples section.
+        </div>
+    </body>
+</html>

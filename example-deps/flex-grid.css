@@ -1,0 +1,231 @@
+/*
+ * Grid system using flexbox inspired from Bootstrap 3 - https://github.com/Munawwar/flex-grid
+ * Bootstrap 4 will make this obsolete and redundant as it will use flexbox.
+ * Read documentation at the github link.
+ */
+/* 12-column Grid layout classes */
+[class*=" col-"],
+[class^="col-"] {
+  min-height: 1px;
+}
+/* Classes to reorder items in mobile  */
+.col-mo-1 {
+  width: 8.33333333%;
+}
+.col-mo-2 {
+  width: 16.66666667%;
+}
+.col-mo-3 {
+  width: 25%;
+}
+.col-mo-4 {
+  width: 33.33333333%;
+}
+.col-mo-5 {
+  width: 41.66666667%;
+}
+.col-mo-6 {
+  width: 50%;
+}
+.col-mo-7 {
+  width: 58.33333333%;
+}
+.col-mo-8 {
+  width: 66.66666667%;
+}
+.col-mo-9 {
+  width: 75%;
+}
+.col-mo-10 {
+  width: 83.33333333%;
+}
+.col-mo-11 {
+  width: 91.66666667%;
+}
+.col-mo-12 {
+  width: 100%;
+}
+.order-mo-1 {
+  order: 1;
+}
+.order-mo-2 {
+  order: 2;
+}
+.order-mo-3 {
+  order: 3;
+}
+.order-mo-4 {
+  order: 4;
+}
+.order-mo-5 {
+  order: 5;
+}
+.order-mo-6 {
+  order: 6;
+}
+.order-mo-7 {
+  order: 7;
+}
+.order-mo-8 {
+  order: 8;
+}
+.order-mo-9 {
+  order: 9;
+}
+.order-mo-10 {
+  order: 10;
+}
+.order-mo-11 {
+  order: 11;
+}
+.order-mo-12 {
+  order: 12;
+}
+@media (min-width: 768px) {
+  .col-ta-1 {
+    width: 8.33333333%;
+  }
+  .col-ta-2 {
+    width: 16.66666667%;
+  }
+  .col-ta-3 {
+    width: 25%;
+  }
+  .col-ta-4 {
+    width: 33.33333333%;
+  }
+  .col-ta-5 {
+    width: 41.66666667%;
+  }
+  .col-ta-6 {
+    width: 50%;
+  }
+  .col-ta-7 {
+    width: 58.33333333%;
+  }
+  .col-ta-8 {
+    width: 66.66666667%;
+  }
+  .col-ta-9 {
+    width: 75%;
+  }
+  .col-ta-10 {
+    width: 83.33333333%;
+  }
+  .col-ta-11 {
+    width: 91.66666667%;
+  }
+  .col-ta-12 {
+    width: 100%;
+  }
+  .order-ta-1 {
+    order: 1;
+  }
+  .order-ta-2 {
+    order: 2;
+  }
+  .order-ta-3 {
+    order: 3;
+  }
+  .order-ta-4 {
+    order: 4;
+  }
+  .order-ta-5 {
+    order: 5;
+  }
+  .order-ta-6 {
+    order: 6;
+  }
+  .order-ta-7 {
+    order: 7;
+  }
+  .order-ta-8 {
+    order: 8;
+  }
+  .order-ta-9 {
+    order: 9;
+  }
+  .order-ta-10 {
+    order: 10;
+  }
+  .order-ta-11 {
+    order: 11;
+  }
+  .order-ta-12 {
+    order: 12;
+  }
+}
+@media (min-width: 992px) {
+  .col-de-1 {
+    width: 8.33333333%;
+  }
+  .col-de-2 {
+    width: 16.66666667%;
+  }
+  .col-de-3 {
+    width: 25%;
+  }
+  .col-de-4 {
+    width: 33.33333333%;
+  }
+  .col-de-5 {
+    width: 41.66666667%;
+  }
+  .col-de-6 {
+    width: 50%;
+  }
+  .col-de-7 {
+    width: 58.33333333%;
+  }
+  .col-de-8 {
+    width: 66.66666667%;
+  }
+  .col-de-9 {
+    width: 75%;
+  }
+  .col-de-10 {
+    width: 83.33333333%;
+  }
+  .col-de-11 {
+    width: 91.66666667%;
+  }
+  .col-de-12 {
+    width: 100%;
+  }
+  .order-de-1 {
+    order: 1;
+  }
+  .order-de-2 {
+    order: 2;
+  }
+  .order-de-3 {
+    order: 3;
+  }
+  .order-de-4 {
+    order: 4;
+  }
+  .order-de-5 {
+    order: 5;
+  }
+  .order-de-6 {
+    order: 6;
+  }
+  .order-de-7 {
+    order: 7;
+  }
+  .order-de-8 {
+    order: 8;
+  }
+  .order-de-9 {
+    order: 9;
+  }
+  .order-de-10 {
+    order: 10;
+  }
+  .order-de-11 {
+    order: 11;
+  }
+  .order-de-12 {
+    order: 12;
+  }
+}
