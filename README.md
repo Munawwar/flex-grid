@@ -23,13 +23,13 @@ order-ta-1 to order-ta-12 - Order of element would be explicitly set in tablet s
 order-de-1 to order-de-12 - Order of element would be explicitly set in desktop size.
 ```
 
-### RTL support
-
-Setting CSS `direction: rtl;` on body tag should cause all rows to be reversed in order. This is part of the flexbox specification. Nothing special needs to be done. If you have any case where row shouldn't be reversed, then set dir="ltr" on the hbox div.
-
 ### Examples
 
 See [examples.html](https://munawwar.github.io/flex-grid/examples.html).
+
+### RTL support
+
+Setting CSS `direction: rtl;` on body tag should cause all rows to be reversed in order. This is part of the flexbox specification. Nothing special needs to be done. If you have any case where row shouldn't be reversed, then set dir="ltr" on the hbox div.
 
 ### BUGS!
 
