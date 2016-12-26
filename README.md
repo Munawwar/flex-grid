@@ -3,7 +3,7 @@ Grid system using CSS3 flexbox (inspired from bootstrap)
 
 grid.less gives a 12-column grid system like Bootstrap. Also allows to reorder elements in mobile site.
 
-NOTE: Bootstrap 4 is going to use flexbox as default. So..this project is soon going to be obsolete and redundant.
+NOTE: Bootstrap 4 is going to use CSS3 flexbox. So..this project is soon going to be obsolete and redundant.
 
 ### Usage
 The CSS is meant to be used along with [flex-helper](https://github.com/Munawwar/flex-helper).
