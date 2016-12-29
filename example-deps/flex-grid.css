@@ -4,228 +4,228 @@
  * Read documentation at the github link.
  */
 /* 12-column Grid layout classes */
-[class*=" col-"],
-[class^="col-"] {
+[class*=" f-col-"],
+[class^="f-col-"] {
   min-height: 1px;
 }
 /* Classes to reorder items in mobile  */
-.col-mo-1 {
+.f-col-xs-1 {
   width: 8.33333333%;
 }
-.col-mo-2 {
+.f-col-xs-2 {
   width: 16.66666667%;
 }
-.col-mo-3 {
+.f-col-xs-3 {
   width: 25%;
 }
-.col-mo-4 {
+.f-col-xs-4 {
   width: 33.33333333%;
 }
-.col-mo-5 {
+.f-col-xs-5 {
   width: 41.66666667%;
 }
-.col-mo-6 {
+.f-col-xs-6 {
   width: 50%;
 }
-.col-mo-7 {
+.f-col-xs-7 {
   width: 58.33333333%;
 }
-.col-mo-8 {
+.f-col-xs-8 {
   width: 66.66666667%;
 }
-.col-mo-9 {
+.f-col-xs-9 {
   width: 75%;
 }
-.col-mo-10 {
+.f-col-xs-10 {
   width: 83.33333333%;
 }
-.col-mo-11 {
+.f-col-xs-11 {
   width: 91.66666667%;
 }
-.col-mo-12 {
+.f-col-xs-12 {
   width: 100%;
 }
-.order-mo-1 {
+.f-order-xs-1 {
   order: 1;
 }
-.order-mo-2 {
+.f-order-xs-2 {
   order: 2;
 }
-.order-mo-3 {
+.f-order-xs-3 {
   order: 3;
 }
-.order-mo-4 {
+.f-order-xs-4 {
   order: 4;
 }
-.order-mo-5 {
+.f-order-xs-5 {
   order: 5;
 }
-.order-mo-6 {
+.f-order-xs-6 {
   order: 6;
 }
-.order-mo-7 {
+.f-order-xs-7 {
   order: 7;
 }
-.order-mo-8 {
+.f-order-xs-8 {
   order: 8;
 }
-.order-mo-9 {
+.f-order-xs-9 {
   order: 9;
 }
-.order-mo-10 {
+.f-order-xs-10 {
   order: 10;
 }
-.order-mo-11 {
+.f-order-xs-11 {
   order: 11;
 }
-.order-mo-12 {
+.f-order-xs-12 {
   order: 12;
 }
 @media (min-width: 768px) {
-  .col-ta-1 {
+  .f-col-sm-1 {
     width: 8.33333333%;
   }
-  .col-ta-2 {
+  .f-col-sm-2 {
     width: 16.66666667%;
   }
-  .col-ta-3 {
+  .f-col-sm-3 {
     width: 25%;
   }
-  .col-ta-4 {
+  .f-col-sm-4 {
     width: 33.33333333%;
   }
-  .col-ta-5 {
+  .f-col-sm-5 {
     width: 41.66666667%;
   }
-  .col-ta-6 {
+  .f-col-sm-6 {
     width: 50%;
   }
-  .col-ta-7 {
+  .f-col-sm-7 {
     width: 58.33333333%;
   }
-  .col-ta-8 {
+  .f-col-sm-8 {
     width: 66.66666667%;
   }
-  .col-ta-9 {
+  .f-col-sm-9 {
     width: 75%;
   }
-  .col-ta-10 {
+  .f-col-sm-10 {
     width: 83.33333333%;
   }
-  .col-ta-11 {
+  .f-col-sm-11 {
     width: 91.66666667%;
   }
-  .col-ta-12 {
+  .f-col-sm-12 {
     width: 100%;
   }
-  .order-ta-1 {
+  .f-order-sm-1 {
     order: 1;
   }
-  .order-ta-2 {
+  .f-order-sm-2 {
     order: 2;
   }
-  .order-ta-3 {
+  .f-order-sm-3 {
     order: 3;
   }
-  .order-ta-4 {
+  .f-order-sm-4 {
     order: 4;
   }
-  .order-ta-5 {
+  .f-order-sm-5 {
     order: 5;
   }
-  .order-ta-6 {
+  .f-order-sm-6 {
     order: 6;
   }
-  .order-ta-7 {
+  .f-order-sm-7 {
     order: 7;
   }
-  .order-ta-8 {
+  .f-order-sm-8 {
     order: 8;
   }
-  .order-ta-9 {
+  .f-order-sm-9 {
     order: 9;
   }
-  .order-ta-10 {
+  .f-order-sm-10 {
     order: 10;
   }
-  .order-ta-11 {
+  .f-order-sm-11 {
     order: 11;
   }
-  .order-ta-12 {
+  .f-order-sm-12 {
     order: 12;
   }
 }
 @media (min-width: 992px) {
-  .col-de-1 {
+  .f-col-md-1 {
     width: 8.33333333%;
   }
-  .col-de-2 {
+  .f-col-md-2 {
     width: 16.66666667%;
   }
-  .col-de-3 {
+  .f-col-md-3 {
     width: 25%;
   }
-  .col-de-4 {
+  .f-col-md-4 {
     width: 33.33333333%;
   }
-  .col-de-5 {
+  .f-col-md-5 {
     width: 41.66666667%;
   }
-  .col-de-6 {
+  .f-col-md-6 {
     width: 50%;
   }
-  .col-de-7 {
+  .f-col-md-7 {
     width: 58.33333333%;
   }
-  .col-de-8 {
+  .f-col-md-8 {
     width: 66.66666667%;
   }
-  .col-de-9 {
+  .f-col-md-9 {
     width: 75%;
   }
-  .col-de-10 {
+  .f-col-md-10 {
     width: 83.33333333%;
   }
-  .col-de-11 {
+  .f-col-md-11 {
     width: 91.66666667%;
   }
-  .col-de-12 {
+  .f-col-md-12 {
     width: 100%;
   }
-  .order-de-1 {
+  .f-order-md-1 {
     order: 1;
   }
-  .order-de-2 {
+  .f-order-md-2 {
     order: 2;
   }
-  .order-de-3 {
+  .f-order-md-3 {
     order: 3;
   }
-  .order-de-4 {
+  .f-order-md-4 {
     order: 4;
   }
-  .order-de-5 {
+  .f-order-md-5 {
     order: 5;
   }
-  .order-de-6 {
+  .f-order-md-6 {
     order: 6;
   }
-  .order-de-7 {
+  .f-order-md-7 {
     order: 7;
   }
-  .order-de-8 {
+  .f-order-md-8 {
     order: 8;
   }
-  .order-de-9 {
+  .f-order-md-9 {
     order: 9;
   }
-  .order-de-10 {
+  .f-order-md-10 {
     order: 10;
   }
-  .order-de-11 {
+  .f-order-md-11 {
     order: 11;
   }
-  .order-de-12 {
+  .f-order-md-12 {
     order: 12;
   }
 }
