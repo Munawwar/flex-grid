@@ -1,26 +1,38 @@
 /* Grid system using flexbox inspired from Bootstrap. */
 /* This is meant to be used along with https://github.com/Munawwar/flex-helper */
 
+/* 12-column Grid layout classes */
+[class*=" f-col-"], [class^="f-col-"] {
+  min-height: 1px;
+}
+
+.generate-columns(@prefix, @grid-count: 12, @i: 1) when (@i =< @grid-count) {
+  .f-col-@{prefix}-@{i} {
+    width: (@i * 100% / @grid-count);
+  }
+  .generate-columns(@prefix, @grid-count, (@i + 1));
+}
+
 /* Classes to reorder items in mobile  */
 .generate-columns-orders(@prefix, @grid-count: 12, @i: 1) when (@i =< @grid-count) {
-  .order-@{prefix}-@{i} {
+  .f-order-@{prefix}-@{i} {
     order: @i;
   }
   .generate-columns-orders(@prefix, @grid-count, (@i + 1));
 }
 
 // For Mobile 
-.generate-columns(mo);
-.generate-columns-orders(mo);
+.generate-columns(xs);
+.generate-columns-orders(xs);
 
 // For Tablets
 @media (min-width: 768px) {
-  .generate-columns(ta);
-  .generate-columns-orders(ta);
+  .generate-columns(sm);
+  .generate-columns-orders(sm);
 }
 
 // For Desktop
 @media (min-width: 992px) {
-  .generate-columns(de);
-  .generate-columns-orders(de);
+  .generate-columns(md);
+  .generate-columns-orders(md);
 }
