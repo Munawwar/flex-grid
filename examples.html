@@ -86,15 +86,15 @@
             Device type prefixes are the first two letters of device type. i.e 'de' for desktops, 'mo' for mobiles and 'ta' for tablets.<br>
             [This naming convention was adopted to avoid collision with bootstrap.]<br>
             <br>
-            Just like bootstrap the CSS priority is "mobile first". i.e. if you apply col-mo-12, on an element, then it applies to all device
-            widths unless another higher-width CSS is applied (like col-de-*).
+            Just like bootstrap the CSS priority is "mobile first". i.e. if you apply f-col-xs-12, on an element, then it applies to all device
+            widths unless another higher-width CSS is applied (like f-col-md-*).
         </div>
         <h3>Example usage</h3>
         <div>
             <h2>12 column width on mobile and 6 column width on desktop</h2>
             <div class="hbox" id="eg-1">
-                <div class="blue col-mo-12 col-de-6" style="height: 30px;">Col 1</div>
-                <div class="amber col-mo-12 col-de-6" style="height: 50px;">Col 2</div>
+                <div class="blue f-col-xs-12 f-col-md-6" style="height: 30px;">Col 1</div>
+                <div class="amber f-col-xs-12 f-col-md-6" style="height: 50px;">Col 2</div>
             </div>
             <div>
                 <script type="text/html" data-id="eg-1"></script>
@@ -103,8 +103,8 @@
             <h2>Adding vertical align to previous example</h2>
             <div style="text-align:center; padding-bottom: 5px;">Just add 'cross-center' to parent div.</div>
             <div class="hbox cross-center" id="eg-2">
-                <div class="blue col-mo-12 col-de-6" style="height: 30px;">Col 1</div>
-                <div class="amber col-mo-12 col-de-6" style="height: 50px;">Col 2</div>
+                <div class="blue f-col-xs-12 f-col-md-6" style="height: 30px;">Col 1</div>
+                <div class="amber f-col-xs-12 f-col-md-6" style="height: 50px;">Col 2</div>
             </div>
             <div>
                 <script type="text/html" data-id="eg-2"></script>
@@ -115,8 +115,8 @@
             <h2>Reordering in mobile</h2>
             <div style="text-align:center; padding-bottom: 5px;">Use order-[device]-[number] classes.</div>
             <div class="hbox cross-center" id="eg-3">
-                <div class="blue col-mo-12 col-de-6 order-mo-2 order-de-1" style="height: 30px;">Col 1</div>
-                <div class="amber col-mo-12 col-de-6 order-mo-1 order-de-2" style="height: 50px;">Col 2</div>
+                <div class="blue f-col-xs-12 f-col-md-6 f-order-xs-2 f-order-md-1" style="height: 30px;">Col 1</div>
+                <div class="amber f-col-xs-12 f-col-md-6 f-order-xs-1 f-order-md-2" style="height: 50px;">Col 2</div>
             </div>
             <div>
                 <script type="text/html" data-id="eg-3"></script>
@@ -125,8 +125,8 @@
             <h2>RTL support</h2>
             <div style="text-align:center; padding-bottom: 5px;">Use HTML element attribute dir="rtl" or CSS direction: rtl.</div>
             <div class="hbox cross-center" id="eg-4" dir="rtl">
-                <div class="blue col-mo-12 col-de-6 order-mo-2 order-de-1" style="height: 30px;">Col 1</div>
-                <div class="amber col-mo-12 col-de-6 order-mo-1 order-de-2" style="height: 50px;">Col 2</div>
+                <div class="blue f-col-xs-12 f-col-md-6 f-order-xs-2 f-order-md-1" style="height: 30px;">Col 1</div>
+                <div class="amber f-col-xs-12 f-col-md-6 f-order-xs-1 f-order-md-2" style="height: 50px;">Col 2</div>
             </div>
             <div>
                 <script type="text/html" data-id="eg-4"></script>
