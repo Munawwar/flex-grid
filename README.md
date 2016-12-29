@@ -14,13 +14,13 @@ First add flex-helper.css and then grid.less.
 
 CSS classes defined are as follows:
 ```
-col-mo-1 to col-mo-12 - Makes element a column of size 1 to 12, for all size, unless overridden by tablet or desktop column class.
-col-ta-1 to col-ta-12 - Makes element a column of size 1 to 12, for tablet size (>=768px), unless overridden by desktop column class.
-col-de-1 to col-de-12 - Makes element a column of size 1 to 12, for desktop szte (>=992px).
+f-col-xs-1 to f-col-xs-12 - Makes element a column of size 1 to 12, for all size, unless overridden by tablet or desktop column class.
+f-col-sm-1 to f-col-sm-12 - Makes element a column of size 1 to 12, for tablet size (>=768px), unless overridden by desktop column class.
+f-col-md-1 to f-col-md-12 - Makes element a column of size 1 to 12, for desktop szte (>=992px).
 
-order-mo-1 to order-mo-12 - Order of element would be explicitly set in mobile size.
-order-ta-1 to order-ta-12 - Order of element would be explicitly set in tablet size.
-order-de-1 to order-de-12 - Order of element would be explicitly set in desktop size.
+f-order-xs-1 to f-order-xs-12 - Order of element would be explicitly set in mobile size.
+f-order-sm-1 to f-order-sm-12 - Order of element would be explicitly set in tablet size.
+f-order-md-1 to f-order-md-12 - Order of element would be explicitly set in desktop size.
 ```
 
 ### Examples
