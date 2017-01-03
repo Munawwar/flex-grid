@@ -1,6 +1,6 @@
 /* Taken from https://github.com/Munawwar/flex-helper.
- * The difference between this file and the github file is that we add 'f-<device>' prefix to all
- * CSS classes to achieve:
+ * The difference between this file and the github file is that we add 'f-' prefix and '-<device>'
+ * suffix to all CSS classes to achieve:
  * 1. mobile specific layouts. <device> follows naming convention of bootstrap. i.e xs, sm and md.
  * 2. avoid conflict with any other CSS classes.
  * 
@@ -8,7 +8,7 @@
  * Read documentation (and some IE 10 issues to be aware of) at the github link.
  */
 /*Stack child items vertically*/
-.f-xs-vbox {
+.f-vbox-xs {
   display: -webkit-flex;
   /*Safari 7-8*/
   display: -ms-flexbox;
@@ -25,7 +25,7 @@
   /*Prevent extending beyond boundaries*/
 }
 /*Stack child items horizontally*/
-.f-xs-hbox {
+.f-hbox-xs {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -44,27 +44,27 @@
   flex-wrap: wrap;
 }
 /*Stretch item along parent's main-axis*/
-.f-xs-flex {
+.f-flex-xs {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 /*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
-.f-xs-stretch-self {
+.f-stretch-self-xs {
   align-self: stretch;
 }
 /*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
-.f-xs-center-self {
+.f-center-self-xs {
   align-self: center;
 }
 /*Stack child items to the main-axis start*/
-.f-xs-main-start {
+.f-main-start-xs {
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 /*Stack child items to the cross-axis start*/
-.f-xs-cross-start {
+.f-cross-start-xs {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   align-items: flex-start;
@@ -73,13 +73,13 @@
   align-content: flex-start;
 }
 /*Stack child items to the main-axis center*/
-.f-xs-main-center {
+.f-main-center-xs {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 /*Stack child items to the cross-axis center*/
-.f-xs-cross-center {
+.f-cross-center-xs {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
@@ -88,13 +88,13 @@
   align-content: center;
 }
 /*Stack child items to the main-axis end.*/
-.f-xs-main-end {
+.f-main-end-xs {
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 /*Stack child items to the cross-axis end.*/
-.f-xs-cross-end {
+.f-cross-end-xs {
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -103,7 +103,7 @@
   align-content: flex-end;
 }
 /*Stretch child items along the cross-axis*/
-.f-xs-cross-stretch {
+.f-cross-stretch-xs {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   align-items: stretch;
@@ -112,14 +112,14 @@
   align-content: stretch;
 }
 /*Wrap items to next line on main-axis*/
-.f-xs-wrap {
+.f-wrap-xs {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   /*Stack child items vertically*/
-  .f-sm-vbox {
+  .f-vbox-sm {
     display: -webkit-flex;
     /*Safari 7-8*/
     display: -ms-flexbox;
@@ -136,7 +136,7 @@
     /*Prevent extending beyond boundaries*/
   }
   /*Stack child items horizontally*/
-  .f-sm-hbox {
+  .f-hbox-sm {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -155,27 +155,27 @@
     flex-wrap: wrap;
   }
   /*Stretch item along parent's main-axis*/
-  .f-sm-flex {
+  .f-flex-sm {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
   }
   /*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
-  .f-sm-stretch-self {
+  .f-stretch-self-sm {
     align-self: stretch;
   }
   /*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
-  .f-sm-center-self {
+  .f-center-self-sm {
     align-self: center;
   }
   /*Stack child items to the main-axis start*/
-  .f-sm-main-start {
+  .f-main-start-sm {
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
   }
   /*Stack child items to the cross-axis start*/
-  .f-sm-cross-start {
+  .f-cross-start-sm {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
@@ -184,13 +184,13 @@
     align-content: flex-start;
   }
   /*Stack child items to the main-axis center*/
-  .f-sm-main-center {
+  .f-main-center-sm {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
   }
   /*Stack child items to the cross-axis center*/
-  .f-sm-cross-center {
+  .f-cross-center-sm {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
@@ -199,13 +199,13 @@
     align-content: center;
   }
   /*Stack child items to the main-axis end.*/
-  .f-sm-main-end {
+  .f-main-end-sm {
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
   /*Stack child items to the cross-axis end.*/
-  .f-sm-cross-end {
+  .f-cross-end-sm {
     -ms-flex-align: end;
     -webkit-align-items: flex-end;
     align-items: flex-end;
@@ -214,7 +214,7 @@
     align-content: flex-end;
   }
   /*Stretch child items along the cross-axis*/
-  .f-sm-cross-stretch {
+  .f-cross-stretch-sm {
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
     align-items: stretch;
@@ -223,7 +223,7 @@
     align-content: stretch;
   }
   /*Wrap items to next line on main-axis*/
-  .f-sm-wrap {
+  .f-wrap-sm {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -231,7 +231,7 @@
 }
 @media (min-width: 992px) {
   /*Stack child items vertically*/
-  .f-md-vbox {
+  .f-vbox-md {
     display: -webkit-flex;
     /*Safari 7-8*/
     display: -ms-flexbox;
@@ -248,7 +248,7 @@
     /*Prevent extending beyond boundaries*/
   }
   /*Stack child items horizontally*/
-  .f-md-hbox {
+  .f-hbox-md {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -267,27 +267,27 @@
     flex-wrap: wrap;
   }
   /*Stretch item along parent's main-axis*/
-  .f-md-flex {
+  .f-flex-md {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
   }
   /*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
-  .f-md-stretch-self {
+  .f-stretch-self-md {
     align-self: stretch;
   }
   /*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
-  .f-md-center-self {
+  .f-center-self-md {
     align-self: center;
   }
   /*Stack child items to the main-axis start*/
-  .f-md-main-start {
+  .f-main-start-md {
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
   }
   /*Stack child items to the cross-axis start*/
-  .f-md-cross-start {
+  .f-cross-start-md {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
@@ -296,13 +296,13 @@
     align-content: flex-start;
   }
   /*Stack child items to the main-axis center*/
-  .f-md-main-center {
+  .f-main-center-md {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
   }
   /*Stack child items to the cross-axis center*/
-  .f-md-cross-center {
+  .f-cross-center-md {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
@@ -311,13 +311,13 @@
     align-content: center;
   }
   /*Stack child items to the main-axis end.*/
-  .f-md-main-end {
+  .f-main-end-md {
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
   /*Stack child items to the cross-axis end.*/
-  .f-md-cross-end {
+  .f-cross-end-md {
     -ms-flex-align: end;
     -webkit-align-items: flex-end;
     align-items: flex-end;
@@ -326,7 +326,7 @@
     align-content: flex-end;
   }
   /*Stretch child items along the cross-axis*/
-  .f-md-cross-stretch {
+  .f-cross-stretch-md {
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
     align-items: stretch;
@@ -335,7 +335,7 @@
     align-content: stretch;
   }
   /*Wrap items to next line on main-axis*/
-  .f-md-wrap {
+  .f-wrap-md {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
