@@ -51,8 +51,8 @@ f-stretch-self-xs  - Stretch item along parent's cross-axis. Overrides any cross
 f-center-self-xs   - Centers item along parent's cross-axis. Overrides any cross-* class behavior
                      on parent.
 
-f-wrap-xs          - Wrap child items to next line on main-axis. hbox wraps by default so no need to add this
-                     classes for hbox.
+f-wrap-xs          - Wrap child items to next line on main-axis. hbox wraps by default so no need to
+                     add this classes for hbox.
 f-nowrap-xs        - Prevent wrapping of items to next line on main-axis.
 
 All of the above are for mobile. Corresponding classes for tablets (sm) and desktop (md) are also defined.
