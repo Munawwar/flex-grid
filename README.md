@@ -12,15 +12,50 @@ First add flex-helper.css and then grid.less.
 
 ### Syntax
 
+Note: The device/viewport naming is like bootstrap (i.e. xs, sm and md). And the viewport cut-off sizes are defined like bootstrap as well (i.e sm is>= 768px and md >= 992px).
+
+Just like bootstrap the CSS priority is "mobile first". i.e. if you apply f-col-xs-12, on an element, then it applies to all device widths unless another higher-width CSS is applied (like f-col-md-6).
+
 CSS classes defined are as follows:
 ```
-f-col-xs-1 to f-col-xs-12 - Makes element a column of size 1 to 12, for all size, unless overridden by tablet or desktop column class.
-f-col-sm-1 to f-col-sm-12 - Makes element a column of size 1 to 12, for tablet size (>=768px), unless overridden by desktop column class.
-f-col-md-1 to f-col-md-12 - Makes element a column of size 1 to 12, for desktop szte (>=992px).
+f-col-xs-1 to f-col-xs-12     - Makes element a column of size 1 to 12, for all sizes, unless
+                                overridden by tablet or desktop column class.
 
-f-order-xs-1 to f-order-xs-12 - Order of element would be explicitly set in mobile size.
-f-order-sm-1 to f-order-sm-12 - Order of element would be explicitly set in tablet size.
-f-order-md-1 to f-order-md-12 - Order of element would be explicitly set in desktop size.
+f-order-xs-1 to f-order-xs-12 - Order of element would be explicitly set for mobile size and above.
+
+Corresponding classes for tablets (sm) and desktop (md) are also defined.
+```
+
+In addition to the grid classes, the follow classes are modified versions of flex-helper.
+i.e. I've added 'f-' prefix (to be same like the above CSS classes) and xs,sm & md suffix like bootstrap.
+
+```
+f-vbox-xs          - Stack child items vertically (the "main axis" for child items is now
+                     the vertical axis)
+f-hbox-xs          - Stack child items horizontally (the "main axis" for child items is now
+                     the horizontal axis)
+f-flex-xs          - Stretch item along parent's main-axis
+
+f-main-start-xs    - Stack child items to the main-axis start
+f-main-center-xs   - Stack child items to the main-axis center
+f-main-end-xs      - Stack child items to the main-axis end
+
+f-cross-start-xs,
+f-cross-center-xs,
+f-cross-end-xs     - Similar to the 'main' counterparts, except that
+                     these decide the stacking of child items along the cross-axis.
+f-cross-stretch-xs - Stretch child items along the cross-axis
+
+f-stretch-self-xs  - Stretch item along parent's cross-axis. Overrides any cross-* class behavior
+                     on parent.
+f-center-self-xs   - Centers item along parent's cross-axis. Overrides any cross-* class behavior
+                     on parent.
+
+f-wrap-xs          - Wrap child items to next line on main-axis. hbox wraps by default so no need to add this
+                     classes for hbox.
+f-nowrap-xs        - Prevent wrapping of items to next line on main-axis.
+
+All of the above are for mobile. Corresponding classes for tablets (sm) and desktop (md) are also defined.
 ```
 
 ### Examples
