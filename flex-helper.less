@@ -10,7 +10,7 @@
 
 .generate-flex-helper(@prefix) {
   /*Stack child items vertically*/
-  .f-vbox-@{prefix} {
+  .f-vbox@{prefix} {
     display: -webkit-flex; /*Safari 7-8*/
     display: -ms-flexbox; /*IE 10*/
     display: flex;
@@ -27,7 +27,7 @@
     overflow: hidden; /*Prevent extending beyond boundaries*/
   }
   /*Stack child items horizontally*/
-  .f-hbox-@{prefix} {
+  .f-hbox@{prefix} {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -50,29 +50,29 @@
   }
 
   /*Stretch item along parent's main-axis*/
-  .f-flex-@{prefix} {
+  .f-flex@{prefix} {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
   }
 
   /*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
-  .f-stretch-self-@{prefix} {
+  .f-stretch-self@{prefix} {
     align-self: stretch;
   }
   /*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
-  .f-center-self-@{prefix} {
+  .f-center-self@{prefix} {
     align-self: center;
   }
 
   /*Stack child items to the main-axis start*/
-  .f-main-start-@{prefix} {
+  .f-main-start@{prefix} {
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
   }
   /*Stack child items to the cross-axis start*/
-  .f-cross-start-@{prefix} {
+  .f-cross-start@{prefix} {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
@@ -82,13 +82,13 @@
     align-content: flex-start;
   }
   /*Stack child items to the main-axis center*/
-  .f-main-center-@{prefix} {
+  .f-main-center@{prefix} {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
   }
   /*Stack child items to the cross-axis center*/
-  .f-cross-center-@{prefix} {
+  .f-cross-center@{prefix} {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
@@ -98,13 +98,13 @@
     align-content: center;
   }
   /*Stack child items to the main-axis end.*/
-  .f-main-end-@{prefix} {
+  .f-main-end@{prefix} {
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
   /*Stack child items to the cross-axis end.*/
-  .f-cross-end-@{prefix} {
+  .f-cross-end@{prefix} {
     -ms-flex-align: end;
     -webkit-align-items: flex-end;
     align-items: flex-end;
@@ -114,7 +114,7 @@
     align-content: flex-end;
   }
   /*Stretch child items along the cross-axis*/
-  .f-cross-stretch-@{prefix} {
+  .f-cross-stretch@{prefix} {
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
     align-items: stretch;
@@ -125,7 +125,7 @@
   }
 
   /*Wrap items to next line on main-axis*/
-  .f-wrap-@{prefix} {
+  .f-wrap@{prefix} {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -133,14 +133,15 @@
 }
 
 // For Mobile 
-.generate-flex-helper(xs);
+.generate-flex-helper(~''); //Empty string
+.generate-flex-helper(-xs);
 
 // For Tablets
 @media (min-width: 768px) {
-  .generate-flex-helper(sm);
+  .generate-flex-helper(-sm);
 }
 
 // For Desktop
 @media (min-width: 992px) {
-  .generate-flex-helper(md);
+  .generate-flex-helper(-md);
 }
