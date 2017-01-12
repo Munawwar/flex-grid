@@ -7,7 +7,7 @@
 }
 
 .generate-columns(@prefix, @grid-count: 12, @i: 1) when (@i =< @grid-count) {
-  .f-col-@{prefix}-@{i} {
+  .f-col@{prefix}-@{i} {
     width: (@i * 100% / @grid-count);
   }
   .generate-columns(@prefix, @grid-count, (@i + 1));
@@ -15,24 +15,26 @@
 
 /* Classes to reorder items in mobile  */
 .generate-columns-orders(@prefix, @grid-count: 12, @i: 1) when (@i =< @grid-count) {
-  .f-order-@{prefix}-@{i} {
+  .f-order@{prefix}-@{i} {
     order: @i;
   }
   .generate-columns-orders(@prefix, @grid-count, (@i + 1));
 }
 
 // For Mobile 
-.generate-columns(xs);
-.generate-columns-orders(xs);
+.generate-columns(~''); //Empty string
+.generate-columns(-xs);
+.generate-columns-orders(~'');
+.generate-columns-orders(-xs);
 
 // For Tablets
 @media (min-width: 768px) {
-  .generate-columns(sm);
-  .generate-columns-orders(sm);
+  .generate-columns(-sm);
+  .generate-columns-orders(-sm);
 }
 
 // For Desktop
 @media (min-width: 992px) {
-  .generate-columns(md);
-  .generate-columns-orders(md);
+  .generate-columns(-md);
+  .generate-columns-orders(-md);
 }
