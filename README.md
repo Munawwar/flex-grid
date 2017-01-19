@@ -21,7 +21,11 @@ CSS classes defined are as follows:
 f-col-xs-1 to f-col-xs-12     - Makes element a column of size 1 to 12, for all sizes, unless
                                 overridden by tablet or desktop column class.
 
+f-col-xs-auto                 - Makes column width auto.
+
 f-order-xs-1 to f-order-xs-12 - Order of element would be explicitly set for mobile size and above.
+
+f-hidden-xs-up                - Makes element hidden on mobile an above.
 
 Corresponding classes for tablets (sm) and desktop (md) are also defined.
 ```
@@ -35,6 +39,8 @@ f-vbox-xs          - Stack child items vertically (the "main axis" for child ite
 f-hbox-xs          - Stack child items horizontally (the "main axis" for child items is now
                      the horizontal axis)
 f-flex-xs          - Stretch item along parent's main-axis
+f-auto-xs          - Fit item to inner content along parent's main-axis, except when there is
+                     no space available (making inner content overflow).
 
 f-main-start-xs    - Stack child items to the main-axis start
 f-main-center-xs   - Stack child items to the main-axis center
