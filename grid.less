@@ -26,15 +26,33 @@
 .generate-columns(-xs);
 .generate-columns-orders(~'');
 .generate-columns-orders(-xs);
+.f-col-auto, .f-col-xs-auto {
+  width: auto;
+}
+.f-hidden-xs-up {
+  display: none;
+}
 
 // For Tablets
 @media (min-width: 768px) {
   .generate-columns(-sm);
   .generate-columns-orders(-sm);
+  .f-col-sm-auto {
+    width: auto;
+  }
+  .f-hidden-sm-up {
+    display: none;
+  }
 }
 
 // For Desktop
 @media (min-width: 992px) {
   .generate-columns(-md);
   .generate-columns-orders(-md);
+  .f-col-md-auto {
+    width: auto;
+  }
+  .f-hidden-md-up {
+    display: none;
+  }
 }
