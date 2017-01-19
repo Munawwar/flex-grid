@@ -55,6 +55,13 @@
     -ms-flex: 1;
     flex: 1;
   }
+  /*Make item fit to inner content or shrink if no space available
+    (causing inner content to overflow)*/
+  .f-auto@{prefix} {
+    -webkit-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+  }
 
   /*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
   .f-stretch-self@{prefix} {
