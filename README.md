@@ -1,4 +1,7 @@
+UNMAINTAINED: I don't recommend anymore, the bootstrap (and this repo's) approach of pre-creating 100s of CSS classes whether it ultimately used or not. Please check out my newer and copact approach https://github.com/Munawwar/flexbox-simplified
+
 # flex-grid
+
 Grid system using CSS3 flexbox (inspired from bootstrap)
 
 grid.less gives a 12-column grid system like Bootstrap. Also allows to reorder elements in mobile site.
