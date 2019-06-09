@@ -1,4 +1,4 @@
-UNMAINTAINED: I don't recommend anymore, the bootstrap (and this repo's) approach of pre-creating 100s of CSS classes whether it ultimately used or not. Please check out my newer and copact approach https://github.com/Munawwar/flexbox-simplified
+UNMAINTAINED: I don't recommend anymore, the bootstrap (and this repo's) approach of pre-creating 100s of CSS classes whether it ultimately used or not. Please check out my newer and compact approach https://github.com/Munawwar/flexbox-simplified
 
 # flex-grid
 
